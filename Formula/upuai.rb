@@ -10,16 +10,16 @@ class Upuai < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/saiph-ti/upuai-web/releases/download/v0.0.1/upuai_0.0.1_darwin_x86_64.tar.gz"
-      sha256 "88fb7efc14df884c8b8462898ed098d8440317fef2e55ff5c6453e35181e9108"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.0.1/upuai_0.0.1_darwin_x86_64.tar.gz"
+      sha256 "605c2c596d091986363de21de5ee264e41caf12af28b1a8110400c679db2c388"
 
       define_method(:install) do
         bin.install "upuai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/saiph-ti/upuai-web/releases/download/v0.0.1/upuai_0.0.1_darwin_arm64.tar.gz"
-      sha256 "0de0b122f2d818897bb03e99ff86b99a3da49b488048218f9abf6a06618842ac"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.0.1/upuai_0.0.1_darwin_arm64.tar.gz"
+      sha256 "8755cc9f321a6eed0d525cd2ea77115db7cb2cd5cc66c8bb93cd6659cbb2b9de"
 
       define_method(:install) do
         bin.install "upuai"
@@ -29,15 +29,15 @@ class Upuai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saiph-ti/upuai-web/releases/download/v0.0.1/upuai_0.0.1_linux_x86_64.tar.gz"
-      sha256 "44ebec6d705a97de5f26aecf3f1a8b2eb885f68e9a4ccc87610f31e36d47f190"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.0.1/upuai_0.0.1_linux_x86_64.tar.gz"
+      sha256 "529b808f1015e7b07565f760f6ce4249c1cd25d994ab9592333c4f3bbb5c2dba"
       define_method(:install) do
         bin.install "upuai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saiph-ti/upuai-web/releases/download/v0.0.1/upuai_0.0.1_linux_arm64.tar.gz"
-      sha256 "f5252d8300953ac69dea380224295241776dd3354800eab4cfd30a6196f89fff"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.0.1/upuai_0.0.1_linux_arm64.tar.gz"
+      sha256 "e328f75765e0ec132fb44bc06bfbb158ec3bdb928f2715e3787fa6c6364af71e"
       define_method(:install) do
         bin.install "upuai"
       end
