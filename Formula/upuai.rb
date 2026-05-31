@@ -5,21 +5,21 @@
 class Upuai < Formula
   desc "Upuai Cloud CLI — deploy your apps with a single command."
   homepage "https://upuai.cloud"
-  version "0.12.2"
+  version "0.12.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.2/upuai_0.12.2_darwin_x86_64.tar.gz"
-      sha256 "24ce79204292da077bda1785dbc310b7737366b1e73cffef1cc6a019a01eaa70"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.3/upuai_0.12.3_darwin_x86_64.tar.gz"
+      sha256 "4dce226ab5c91e7ea2ddd6dd6bc1de416f9c3e6292c968bb3c30b82470fe1cbe"
 
       define_method(:install) do
         bin.install "upuai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.2/upuai_0.12.2_darwin_arm64.tar.gz"
-      sha256 "ea13d57b1820a12e856fb83526d703c34f525cc4de0cad49b050aca915b6c743"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.3/upuai_0.12.3_darwin_arm64.tar.gz"
+      sha256 "3699c72c27990ed896081ff968f5a4b038fac0d00ecbff6cac315a7325437e6b"
 
       define_method(:install) do
         bin.install "upuai"
@@ -29,15 +29,15 @@ class Upuai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.2/upuai_0.12.2_linux_x86_64.tar.gz"
-      sha256 "51c6c6793e308ee635438a0b89744566420232f64befb73946836917be6d5493"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.3/upuai_0.12.3_linux_x86_64.tar.gz"
+      sha256 "e7e888f4863ac16c27f6b57cc93938f6eece33c2a1c38246d35798f1e7ac1633"
       define_method(:install) do
         bin.install "upuai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.2/upuai_0.12.2_linux_arm64.tar.gz"
-      sha256 "78847e90e75e381c3039866bce9d057a616f9d7c5bc415665bfdfcc649bcc61e"
+      url "https://github.com/saiph-ti/upuai-cli/releases/download/v0.12.3/upuai_0.12.3_linux_arm64.tar.gz"
+      sha256 "60ad2242d4f9b03bbdbc7c01413c8626b52c4e997760e8361338fdf63583f139"
       define_method(:install) do
         bin.install "upuai"
       end
